@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 # Copyright:   GPL
 # Author:      Daniel Klopp (dsklopp@gmail.com)
 # Created:     December 28, 2014 (12/28/14)
@@ -5,11 +6,11 @@
 #              we start it with using parenthesis, then demonstrate they are
 #              not needed.
 
-host_file = File.open("/etc/hosts")
+a_file = File.open("/etc/haproxy/haproxy.cfg")
 
-host_file.readlines().each() do |line|
+a_file.readlines().each() do |line|
    puts line
 end
 
-host_file.close()
+a_file.close()
 
