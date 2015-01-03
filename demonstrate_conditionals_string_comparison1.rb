@@ -1,5 +1,7 @@
-# Author: Daniel Klopp
-# Copyright: GPL2
+#!/usr/bin/env ruby
+# Copyright:   GPL
+# Author:      Daniel Klopp (dsklopp@gmail.com)
+# Created:     January 02, 2014 (01/02/15)
 # Description: Sample ruby code that opens haproxy.cfg, searches for the proper line
 #              and prints it out.  Demonstrates conditionals, string comparison, and splicing
 
