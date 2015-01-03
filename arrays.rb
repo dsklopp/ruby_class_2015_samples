@@ -10,10 +10,14 @@
 # then copy and paste until the next comment
 basic_array = [ 'a', 'b', 'c', 'd']
 print basic_array, "\n"
+print basic_array.reverse(), "\n"
 print basic_array[1], "\n"
 basic_array << 'e'
 print basic_array, "\n"
-print basic_array.reverse(), "\n"
+basic_array[1..2] = 'z'
+print basic_array, "\n"
+basic_array[1..2] = ['m', 'n']
+print basic_array, "\n"
 
 # End string splicing demonstration
 
