@@ -20,6 +20,13 @@ print basic_array.reverse(), "\n"
 # For class demonstration, start irb likeso
 # irb --noecho --simple-prompt
 # then copy and paste until the next comment
+
 phrase="You flatter me.  I would have reserved a seat specifically for you."
+array_phrase = phrase.split
+print array_phrase, "\n"
+puts array_phrase[-1]
+puts array_phrase[6]
+puts array_phrase.join('-')
+
 # End string splicing demonstration
 
