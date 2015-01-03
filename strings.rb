@@ -17,16 +17,17 @@ puts "Hi there #{name}"
 
 # End basic string demonstration
 
-puts
+# For class demonstration, start irb likeso
+# irb --noecho --simple-prompt
+# then copy and paste until the next comment
 phrase="You flatter me.  I would have reserved a seat specifically for you."
-
-puts "phrase is: "
-puts phrase
-puts
-puts 'phrase[0..2]="' + phrase[0..2] + '"'
-puts 'phrase[-4..-1]="' + phrase[-4..-1] + '"'
-puts 'phrase[-4..-2]="' + phrase[-4..-2] + '"'
-puts 'phrase[29..43]="' + phrase[29..43] + '"'
+puts phrase[0]
+puts phrase[-1]
+puts phrase[0..2]
+puts phrase[-4..-1]
+puts phrase[-4..-2]
+puts phrase[30..44]
+# End string splicing demonstration
 
 word="AnDrOIds\n"
 puts
@@ -36,9 +37,12 @@ puts 'word is: '
 puts word
 puts 'word.chomp'
 
+phrase="You flatter me.  I would have reserved a seat specifically for you."
 puts
-puts "=== String Substitution"
-puts
-puts 'phrase.gsub("seat", "table")="' + phrase.gsub("seat", "table") + '"'
+puts phrase
+puts phrase.gsub("seat", "table")
+puts phrase.upcase
+puts phrase.downcase
+puts phrase.size
 
 
