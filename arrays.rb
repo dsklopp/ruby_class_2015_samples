@@ -34,3 +34,13 @@ puts array_phrase.join('-')
 
 # End string splicing demonstration
 
+# For class demonstration, start irb likeso
+# irb --noecho --simple-prompt
+# then copy and paste until the next comment
+filled_array=['hello', 'world']
+print filled_array, "\n"
+empty_array=[]
+print empty_array, "\n"
+print filled_array[1], "\n"
+print empty_array[1], "\n"
+# End array out of bounds demonstration
