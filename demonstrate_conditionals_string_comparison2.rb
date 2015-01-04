@@ -13,12 +13,8 @@ a_file=File.open(filename)
 # backend
 a_file.readlines.each do |line|
   line_items=line.split()
-  if line_items.size == 0
-    next
-  elsif line_items[0] == "default_backend"
+  if line_items[0] == "default_backend"
     puts line_items[1..-1].join(' ')
-  else
-    nil
   end
 end
 
@@ -33,9 +29,7 @@ backend_block = false
 current_backend = nil
 File.open(filename).readlines.each do |line|
   line_items=line.split()
-  if line_items.size == 0
-    next
-  elsif line_items[0] == "backend"
+  if line_items[0] == "backend"
     current_backend = line_items[1]
     backends[current_backend] = []
     backend_block = true
