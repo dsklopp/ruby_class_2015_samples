@@ -8,8 +8,6 @@
 filename="minimal.cfg" 
 a_file=File.open(filename)
 
-# Search for the default_backend to figure out which one is
-# currently active, then print it out
 a_file.readlines.each do |line|
   line_items=line.split()
   if line_items[0] == 'default_backend'
