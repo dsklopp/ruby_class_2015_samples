@@ -12,12 +12,8 @@ a_file=File.open(filename)
 # currently active, then print it out
 a_file.readlines.each do |line|
   line_items=line.split()
-  if line_items.size == 0
-    next
-  elsif line_items[0] == "default_backend"
+  if line_items[0] == "default_backend"
     puts line_items[1..-1].join(' ')
-  else
-    nil
   end
 end
 
