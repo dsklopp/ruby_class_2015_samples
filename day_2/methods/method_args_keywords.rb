@@ -1,12 +1,12 @@
 
-def backup(src: "bkup_dir", dst: "bkup_dir")
+def backup(src: "src_dir", dst: "bkup_dir")
   puts "rm -rf #{dst}"
   puts "cp -a #{src} #{dst}"
 end
 
 backup()
 
-def backup(src: "bkup_dir", dst: "bkup_dir")
+def backup(src: "src_dir", dst: "bkup_dir")
   puts "rm -rf #{dst}"
   puts "cp -a #{src} #{dst}"
 end
