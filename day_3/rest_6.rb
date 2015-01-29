@@ -50,7 +50,5 @@ class SocketListen
       return @data[path[0]].to_s + "    "
     end
   end
-
-
 end
 SocketListen.new()
